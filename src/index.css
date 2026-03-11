@@ -1,0 +1,194 @@
+:root {
+  font-family: "Inter", "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
+
+  color: rgba(255, 255, 255, 0.92);
+  background-color: #0f1117;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --bg: #0f1117;
+  --bg-elevated: #171a22;
+  --surface: #1d2230;
+  --surface-soft: #232938;
+  --border: rgba(255, 255, 255, 0.08);
+  --text: rgba(255, 255, 255, 0.92);
+  --text-muted: rgba(255, 255, 255, 0.68);
+  --accent: #8ea6ff;
+  --accent-hover: #a9bbff;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  background: var(--bg);
+  color: var(--text);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+a:hover {
+  color: var(--accent-hover);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  color: var(--text);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+p {
+  color: var(--text-muted);
+}
+
+button {
+  font: inherit;
+}
+
+tspan {
+  fill: #d3d3d3;
+}
+
+.Leaderboard {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.leaderboard-header div {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.bibtex {
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 18px 20px;
+  overflow-x: auto;
+
+  color: #e6eaf2;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+
+  font-family: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: left;
+}
+
+.bibtex pre {
+  margin: 0;
+  white-space: pre;
+}
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.paper-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+
+  box-shadow: var(--shadow);
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.paper-button:hover {
+  background: var(--surface-soft);
+  border-color: rgba(255, 255, 255, 0.14);
+  opacity: 0.96;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+}
+
+.paper-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.arxiv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  background: #b31b1b;
+  color: white;
+  text-decoration: none;
+  box-shadow: var(--shadow);
+
+  transition:
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.arxiv-button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+  filter: brightness(1.03);
+}
+
+#bibtex-section {
+  margin-top: 20px;
+}

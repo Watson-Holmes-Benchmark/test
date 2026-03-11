@@ -1,0 +1,194 @@
+[
+  {
+    "rank": "1",
+    "model": "o3-pro",
+    "score": 2.14,
+    "group": "rModel"
+  },
+  {
+    "rank": "2",
+    "model": "GPT-5 (high)",
+    "score": 2.11,
+    "group": "rModel"
+  },
+  {
+    "rank": "3",
+    "model": "GPT-5 (main rModel)",
+    "score": 2.1,
+    "group": "rModel"
+  },
+  {
+    "rank": "4",
+    "model": "o3",
+    "score": 2.04,
+    "group": "rModel"
+  },
+  {
+    "rank": "5",
+    "model": "o3 (high)",
+    "score": 2.02,
+    "group": "rModel"
+  },
+  {
+    "rank": "6",
+    "model": "Gemini 3.1 Pro",
+    "score": 1.99,
+    "group": "rModel"
+  },
+  {
+    "rank": "7",
+    "model": "Claude Opus 4.6",
+    "score": 1.93,
+    "group": "rModel"
+  },
+  {
+    "rank": "8",
+    "model": "Gemini 3 Flash",
+    "score": 1.89,
+    "group": "rModel"
+  },
+  {
+    "rank": "9",
+    "model": "Gemini 2.5 Pro",
+    "score": 1.8,
+    "group": "rModel"
+  },
+  {
+    "rank": "10",
+    "model": "o1",
+    "score": 1.66,
+    "group": "rModel"
+  },
+  {
+    "rank": "11",
+    "model": "Claude Opus 4",
+    "score": 1.66,
+    "group": "rModel"
+  },
+  {
+    "rank": "12",
+    "model": "GPT5.4",
+    "score": 1.51,
+    "group": "rModel"
+  },
+  {
+    "rank": "13",
+    "model": "Claude 3.7 Sonnet",
+    "score": 1.48,
+    "group": "rModel"
+  },
+  {
+    "rank": "14",
+    "model": "Claude Sonnet 4.6",
+    "score": 1.46,
+    "group": "rModel"
+  },
+  {
+    "rank": "15",
+    "model": "GPT-4.1 (main cModel)",
+    "score": 1.45,
+    "group": "cModel"
+  },
+  {
+    "rank": "16",
+    "model": "Claude Sonnet 4",
+    "score": 1.45,
+    "group": "rModel"
+  },
+  {
+    "rank": "0",
+    "model": "Average Human",
+    "score": 1.43,
+    "group": "Human"
+  },
+  {
+    "rank": "17",
+    "model": "Gemini 2.5 Flash",
+    "score": 1.39,
+    "group": "rModel"
+  },
+  {
+    "rank": "18",
+    "model": "GPT-5 mini",
+    "score": 1.3,
+    "group": "rModel"
+  },
+  {
+    "rank": "19",
+    "model": "GPT5.2",
+    "score": 1.21,
+    "group": "rModel"
+  },
+  {
+    "rank": "20",
+    "model": "DeepSeek-V3",
+    "score": 1.17,
+    "group": "rModel"
+  },
+  {
+    "rank": "21",
+    "model": "Claude Haiku 4.5",
+    "score": 1.14,
+    "group": "cModel"
+  },
+  {
+    "rank": "22",
+    "model": "GPT-4o",
+    "score": 1.1,
+    "group": "cModel"
+  },
+  {
+    "rank": "23",
+    "model": "Llama 4 Maverick",
+    "score": 0.99,
+    "group": "cModel"
+  },
+  {
+    "rank": "24",
+    "model": "Claude 3.5 Haiku",
+    "score": 0.88,
+    "group": "cModel"
+  },
+  {
+    "rank": "25",
+    "model": "GPT-5 nano",
+    "score": 0.87,
+    "group": "rModel"
+  },
+  {
+    "rank": "26",
+    "model": "GPT-4.1 mini",
+    "score": 0.66,
+    "group": "cModel"
+  },
+  {
+    "rank": "27",
+    "model": "o3-mini",
+    "score": 0.62,
+    "group": "rModel"
+  },
+  {
+    "rank": "28",
+    "model": "Llama 4 Scout",
+    "score": 0.55,
+    "group": "cModel"
+  },
+  {
+    "rank": "29",
+    "model": "GPT-4.1 nano",
+    "score": 0.5,
+    "group": "cModel"
+  },
+  {
+    "rank": "30",
+    "model": "Mistral 7B Instruct v0.3",
+    "score": 0.44,
+    "group": "cModel"
+  },
+  {
+    "rank": "31",
+    "model": "GPT-4o mini",
+    "score": 0.44,
+    "group": "cModel"
+  }
+]
