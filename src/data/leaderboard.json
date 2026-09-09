@@ -3,258 +3,301 @@
     "rank": "0",
     "model": "Gemini 3.1 Pro (med.)",
     "score": 2.36,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "1",
     "model": "GPT 5.6 Sol (medium)",
     "score": 2.36,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "2",
     "model": "GPT 5.4 (high)",
     "score": 2.35,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "3",
     "model": "Gemini 3.1 Pro (high)",
     "score": 2.33,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "4",
     "model": "GPT 5.5 (medium)",
     "score": 2.32,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "5",
     "model": "GPT5.4 (medium)",
     "score": 2.27,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "7",
     "model": "o3-pro",
     "score": 2.25,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "8",
     "model": "GPT5 (high)",
     "score": 2.13,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "9",
     "model": "GPT5 (medium)",
     "score": 2.11,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "10",
     "model": "o3",
     "score": 2.1,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "11",
     "model": "o3-high",
     "score": 2.05,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "12",
     "model": "Gemini 3 Flash (med.)",
     "score": 2.03,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "13",
     "model": "Gemini 3.5 Flash (med.)",
     "score": 2.03,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "14",
     "model": "GPT 5.6 Terra (medium)",
     "score": 1.99,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "15",
     "model": "Claude Opus 4.6 (med.)",
     "score": 1.97,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "16",
     "model": "GPT5.2 (med.)",
     "score": 1.95,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "17",
     "model": "Gemini 2.5 Pro",
     "score": 1.86,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "18",
     "model": "Claude Opus 4.6 (med.)",
     "score": 1.81,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "19",
     "model": "GPT 5.6 Luna (medium)",
     "score": 1.8,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "20",
     "model": "o1",
     "score": 1.67,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "21",
     "model": "Claude Opus 4",
     "score": 1.65,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "22",
     "model": "Claude Sonnet 4.6 (med.)",
     "score": 1.65,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "23",
     "model": "GPT5.4 (none)",
     "score": 1.59,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "24",
     "model": "Claude Sonnet 3.7",
     "score": 1.52,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "25",
     "model": "Claude Sonnet 4.6",
     "score": 1.5,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "26",
     "model": "Claude Sonnet 4",
     "score": 1.49,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "27",
     "model": "GPT-4.1",
     "score": 1.47,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "29",
     "model": "Gemini 2.5 Flash",
     "score": 1.46,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "Google"
   },
   {
     "rank": "28",
     "model": "Average Human",
     "score": 1.43,
-    "group": "Human"
+    "group": "Human",
+    "vendor": "Human"
   },
   {
     "rank": "30",
     "model": "GPT5-mini",
     "score": 1.4,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "31",
     "model": "DeepSeek-V3",
     "score": 1.31,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "32",
     "model": "GPT5.2 (none)",
     "score": 1.23,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "33",
     "model": "Claude Haiku 4.5",
     "score": 1.2,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "34",
     "model": "GPT4o",
     "score": 1.16,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "35",
     "model": "Llama 4 Maverick",
     "score": 1.14,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "Other"
   },
   {
     "rank": "36",
     "model": "Claude 3.5 Haiku",
     "score": 0.99,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "Anthropic"
   },
   {
     "rank": "37",
     "model": "GPT-5 nano",
     "score": 0.9,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "38",
     "model": "GPT-4.1 mini",
     "score": 0.84,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "39",
     "model": "o3-mini",
     "score": 0.67,
-    "group": "rModel"
+    "group": "rModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "40",
     "model": "Llama 4 Scout",
     "score": 0.61,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "Other"
   },
   {
     "rank": "41",
     "model": "GPT-4.1 nano",
     "score": 0.54,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "42",
     "model": "GPT-4o mini",
     "score": 0.5,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "OpenAI"
   },
   {
     "rank": "43",
     "model": "Mistral 7B Instruct v0.3",
     "score": 0.43,
-    "group": "cModel"
+    "group": "cModel",
+    "vendor": "Other"
   }
 ]

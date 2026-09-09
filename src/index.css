@@ -192,3 +192,173 @@ tspan {
 #bibtex-section {
   margin-top: 20px;
 }
+
+
+
+.ask-4-model {
+  color: var(--text);
+}
+
+.ask-4-model .recommend-button {
+  margin: 1.5rem 0;
+  padding: 10px 18px;
+
+  background: var(--surface);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  font: inherit;
+  font-weight: 500;
+  cursor: pointer;
+
+  box-shadow: var(--shadow);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ask-4-model .recommend-button:hover {
+  background: var(--surface-soft);
+  border-color: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+}
+
+.ask-4-model .modal-overlay {
+  position: fixed;
+  inset: 0;
+
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  z-index: 1000;
+}
+
+.ask-4-model .modal {
+  position: relative;
+
+  width: min(90%, 450px);
+  padding: 2rem;
+
+  background: var(--bg-elevated);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 12px;
+
+  box-shadow: var(--shadow);
+}
+
+.ask-4-model .modal h2,
+.ask-4-model .modal h3 {
+  color: var(--text);
+}
+
+.ask-4-model .modal p {
+  color: var(--text-muted);
+}
+
+.ask-4-model .modal-close {
+  position: absolute;
+  top: 0.7rem;
+  right: 0.9rem;
+
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+
+  font-size: 1.5rem;
+  cursor: pointer;
+
+  transition: color 0.2s ease;
+}
+
+.ask-4-model .modal-close:hover {
+  color: var(--text);
+}
+
+.ask-4-model .modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.ask-4-model .modal label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+
+  color: var(--text);
+  font-size: 0.95rem;
+}
+
+.ask-4-model .modal input,
+.ask-4-model .modal textarea,
+.ask-4-model .modal select {
+  width: 100%;
+  padding: 10px 12px;
+
+  background: var(--surface);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+
+  font: inherit;
+  outline: none;
+
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.ask-4-model .modal input::placeholder,
+.ask-4-model .modal textarea::placeholder {
+  color: var(--text-muted);
+}
+
+.ask-4-model .modal input:focus,
+.ask-4-model .modal textarea:focus,
+.ask-4-model .modal select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px rgba(142, 166, 255, 0.15);
+}
+
+.ask-4-model .modal form button {
+  padding: 10px 18px;
+
+  background: var(--accent);
+  color: #0f1117;
+
+  border: none;
+  border-radius: 8px;
+
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.ask-4-model .modal form button:hover {
+  background: var(--accent-hover);
+  transform: translateY(-1px);
+}
+
+.ask-4-model .contact {
+  margin-top: 1.5rem;
+
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}

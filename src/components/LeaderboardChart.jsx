@@ -8,6 +8,7 @@ import {
   CartesianGrid,
   Tooltip,
   Cell,
+  ReferenceLine
 } from "recharts"
 
 function LeaderboardChart() {
@@ -44,10 +45,10 @@ function LeaderboardChart() {
 
         <ReferenceLine
           y={2.62}
-          stroke="#666"
-          strokeDasharray="4 4"
+          stroke="#e8e6e6"
+          strokeDasharray="8 8"
           label={{
-            value: "Max achievable score (lower bound) = 2.62",
+            value: "Maximum achievable score (lower bound)",
             position: "insideTopRight",
           }}
         />

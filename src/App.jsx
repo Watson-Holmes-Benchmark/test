@@ -3,6 +3,7 @@ import LeaderboardSection from "./components/LeaderboardSection";
 import Contributor from "./components/Contributor";
 import BibEntry from "./components/BibEntry";
 import bibtext from "./data/bibtext";
+import RecommendModel from "./components/RecommendedModel";
 
 import "./App.css";
 
@@ -31,6 +32,8 @@ function App() {
       <br />
 
       <LeaderboardSection />
+
+      <RecommendModel />
 
 
       <div id="bibtex-section">
