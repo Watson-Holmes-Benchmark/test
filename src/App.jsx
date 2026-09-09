@@ -10,8 +10,8 @@ function App() {
   return (
     <>
       <h1>
-        Watson & Holmes: A Naturalistic Benchmark for Comparing Human and LLM
-        Reasoning
+        Watson & Holmes:
+      A Benchmark for Naturalistic AI Reasoning
       </h1>
 
       <PaperLinks

@@ -9,6 +9,7 @@ function Leaderboard() {
             <th>Rank</th>
             <th>Model name</th>
             <th>Overall score</th>
+            <th>Vendor</th>
           </tr>
         </thead>
 
@@ -20,6 +21,7 @@ function Leaderboard() {
                 <td>{row.rank}</td>
                 <td>{row.model}</td>
                 <td>{row.score}</td>
+                <td>{row.vendor}</td>
               </tr>
             ))}
         </tbody>
