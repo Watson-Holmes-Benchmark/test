@@ -16,12 +16,18 @@
   --surface: #1d2230;
   --surface-soft: #232938;
   --border: rgba(255, 255, 255, 0.08);
+
   --text: rgba(255, 255, 255, 0.92);
   --text-muted: rgba(255, 255, 255, 0.68);
+
   --accent: #8ea6ff;
   --accent-hover: #a9bbff;
+
   --shadow: 0 10px 30px rgba(0, 0, 0, 0.28);
 }
+
+
+/* Base */
 
 * {
   box-sizing: border-box;
@@ -35,6 +41,7 @@ body {
   margin: 0;
   min-width: 320px;
   min-height: 100vh;
+
   background: var(--bg);
   color: var(--text);
 }
@@ -42,12 +49,22 @@ body {
 a {
   color: var(--accent);
   text-decoration: none;
-  transition: color 0.2s ease, opacity 0.2s ease;
+
+  transition:
+    color 0.2s ease,
+    opacity 0.2s ease;
 }
 
 a:hover {
   color: var(--accent-hover);
 }
+
+button {
+  font: inherit;
+}
+
+
+/* Typography */
 
 h1,
 h2,
@@ -56,6 +73,7 @@ h4,
 h5,
 h6 {
   margin-top: 0;
+
   color: var(--text);
   line-height: 1.2;
   letter-spacing: -0.02em;
@@ -69,17 +87,17 @@ p {
   color: var(--text-muted);
 }
 
-button {
-  font: inherit;
-}
-
 tspan {
   fill: #d3d3d3;
 }
 
+
+/* Leaderboard */
+
 .Leaderboard {
   display: flex;
   justify-content: center;
+
   width: 100%;
 }
 
@@ -89,15 +107,148 @@ tspan {
   gap: 10px;
 }
 
+
+/* Leaderboard chart */
+
+.desktop-chart-scroll {
+  position: relative;
+
+  width: 100%;
+  margin-bottom: 8px;
+
+  overflow-x: auto;
+  overflow-y: hidden;
+
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.25) transparent;
+}
+
+.desktop-chart-inner {
+  width: 100%;
+  height: 500px;
+}
+
+/* Chart tooltip */
+
+.popup-chart-tooltips {
+  padding: 10px 12px;
+
+  background: rgba(15, 17, 23, 0.8);
+  color: var(--text);
+
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+
+  font-family: inherit;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.popup-chart-tooltips .model-name {
+  margin-bottom: 2px;
+
+  color: var(--text);
+  font-weight: 600;
+}
+
+.popup-chart-tooltips .model-score {
+  color: var(--text-muted);
+}
+
+
+/* Paper links */
+
+.paper-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+
+  margin: 24px 0;
+}
+
+.paper-button,
+.arxiv-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  padding: 10px 18px;
+
+  border: 1px solid var(--border);
+  border-radius: 10px;
+
+  color: var(--text);
+  text-decoration: none;
+
+  font-family: inherit;
+  font-weight: 500;
+
+  cursor: pointer;
+  box-shadow: var(--shadow);
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    opacity 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease,
+    filter 0.2s ease;
+}
+
+.paper-button {
+  background: var(--surface);
+}
+
+.paper-button:hover {
+  background: var(--surface-soft);
+  border-color: rgba(255, 255, 255, 0.14);
+
+  opacity: 0.96;
+  transform: translateY(-1px);
+
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+}
+
+.paper-button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+.arxiv-button {
+  background: #b31b1b;
+  color: #fff;
+}
+
+.arxiv-button:hover {
+  opacity: 0.95;
+  transform: translateY(-1px);
+
+  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
+  filter: brightness(1.03);
+}
+
+
+/* BibTeX */
+
+#bibtex-section {
+  margin-top: 20px;
+}
+
 .bibtex {
   width: 100%;
   max-width: 960px;
+
   margin: 0 auto;
   padding: 18px 20px;
+
   overflow-x: auto;
 
-  color: #e6eaf2;
   background: var(--bg-elevated);
+  color: #e6eaf2;
+
   border: 1px solid var(--border);
   border-radius: 12px;
   box-shadow: var(--shadow);
@@ -113,87 +264,8 @@ tspan {
   white-space: pre;
 }
 
-.paper-links {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 12px;
-  margin: 24px 0;
-}
 
-.paper-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  padding: 10px 18px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-
-  background: var(--surface);
-  color: var(--text);
-  text-decoration: none;
-  font-weight: 500;
-  font-family: inherit;
-  cursor: pointer;
-
-  box-shadow: var(--shadow);
-  transition:
-    background-color 0.2s ease,
-    border-color 0.2s ease,
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease;
-}
-
-.paper-button:hover {
-  background: var(--surface-soft);
-  border-color: rgba(255, 255, 255, 0.14);
-  opacity: 0.96;
-  transform: translateY(-1px);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
-}
-
-.paper-button:focus-visible {
-  outline: 2px solid var(--accent);
-  outline-offset: 2px;
-}
-
-.arxiv-button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-
-  padding: 10px 18px;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-
-  background: #b31b1b;
-  color: white;
-  text-decoration: none;
-  box-shadow: var(--shadow);
-
-  transition:
-    opacity 0.2s ease,
-    transform 0.2s ease,
-    box-shadow 0.2s ease,
-    filter 0.2s ease;
-}
-
-.arxiv-button:hover {
-  opacity: 0.95;
-  transform: translateY(-1px);
-  box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
-  filter: brightness(1.03);
-}
-
-#bibtex-section {
-  margin-top: 20px;
-}
-
-
+/* Ask for model */
 
 .ask-4-model {
   color: var(--text);
@@ -211,8 +283,8 @@ tspan {
 
   font: inherit;
   font-weight: 500;
-  cursor: pointer;
 
+  cursor: pointer;
   box-shadow: var(--shadow);
 
   transition:
@@ -225,22 +297,26 @@ tspan {
 .ask-4-model .recommend-button:hover {
   background: var(--surface-soft);
   border-color: rgba(255, 255, 255, 0.14);
+
   transform: translateY(-1px);
+
   box-shadow: 0 14px 34px rgba(0, 0, 0, 0.34);
 }
+
+
+/* Modal */
 
 .ask-4-model .modal-overlay {
   position: fixed;
   inset: 0;
-
-  background: rgba(0, 0, 0, 0.72);
-  backdrop-filter: blur(4px);
+  z-index: 1000;
 
   display: flex;
   align-items: center;
   justify-content: center;
 
-  z-index: 1000;
+  background: rgba(0, 0, 0, 0.72);
+  backdrop-filter: blur(4px);
 }
 
 .ask-4-model .modal {
@@ -254,7 +330,6 @@ tspan {
 
   border: 1px solid var(--border);
   border-radius: 12px;
-
   box-shadow: var(--shadow);
 }
 
@@ -273,10 +348,12 @@ tspan {
   right: 0.9rem;
 
   border: none;
+
   background: transparent;
   color: var(--text-muted);
 
   font-size: 1.5rem;
+
   cursor: pointer;
 
   transition: color 0.2s ease;
@@ -285,6 +362,9 @@ tspan {
 .ask-4-model .modal-close:hover {
   color: var(--text);
 }
+
+
+/* Modal form */
 
 .ask-4-model .modal form {
   display: flex;
@@ -337,13 +417,14 @@ tspan {
   padding: 10px 18px;
 
   background: var(--accent);
-  color: #0f1117;
+  color: var(--bg);
 
   border: none;
   border-radius: 8px;
 
   font: inherit;
   font-weight: 600;
+
   cursor: pointer;
 
   transition:
@@ -361,4 +442,19 @@ tspan {
 
   color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+
+/* Responsive */
+
+@media (max-width: 1399px) {
+  .desktop-chart-inner {
+    width: 1400px;
+  }
+}
+
+@media (max-width: 900px) {
+  h1 {
+    font-size: 2rem;
+  }
 }

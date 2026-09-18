@@ -74,7 +74,6 @@ function RecommendModel() {
                   value={modelUrl}
                   onChange={(e) => setModelUrl(e.target.value)}
                   placeholder="https://..."
-                  required
                 />
               </label>
 
@@ -84,7 +83,7 @@ function RecommendModel() {
             </form>
 
             <p className="contact">
-              Contact:{" "}
+              Or contact:{" "}
               <a href={`mailto:${contactEmail}`}>
                 {contactEmail}
               </a>
