@@ -57,7 +57,7 @@ function RecommendModel() {
 
             <form onSubmit={handleSubmit}>
               <label>
-                Model name
+                <span>Model name <span className="required">*</span></span>
                 <input
                   type="text"
                   value={modelName}
@@ -68,7 +68,7 @@ function RecommendModel() {
               </label>
 
               <label>
-                Model URL
+                <span>Model URL <span className="optional">(optional)</span></span>
                 <input
                   type="url"
                   value={modelUrl}
